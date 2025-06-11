@@ -1,0 +1,41 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/ecommerce?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Ho_Chi_Minh
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql:
+  data:
+    redis:
+      use-redis-cache: false
+      host: localhost
+      port: 6379
+  rabbitmq:
+    host: localhost
+    port: 15672
+    username: admin
+    password: admin
+
+#      rabbitmq-plugins.bat enable rabbitmq_management rabbitmq-server.bat
+
+
+api:
+  prefix: /api/v1
+
+jwt:
+  expiration: 2592000
+  secretKey: TaqlmGv1iEDMRiFp/pHuID1+T84IABfuA0xXh4GhiUI=
+
+logging:
+  level:
+    org.springframework.security: DEBUG
