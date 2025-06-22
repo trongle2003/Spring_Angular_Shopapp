@@ -1,0 +1,95 @@
+/* Tổng thể container */
+.container-fluid {
+    background-color: #f8f9fa;
+    /* trắng ngà */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background-color: #007bff;
+    /* xanh dương */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+/* Header title */
+.header-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Logout button */
+.header .btn {
+    margin-left: auto;
+}
+
+/* Dòng chứa sidebar và nội dung chính */
+.row {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Sidebar */
+#sidebar {
+    background-color: #e3f2fd;
+    /* xanh dương nhạt */
+    color: #212529;
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 1rem;
+    border-right: 1px solid #ccc;
+}
+
+/* Sidebar link */
+#sidebar .nav-link {
+    color: #212529;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+/* Sidebar link hover */
+#sidebar .nav-link:hover {
+    background-color: #d0e7ff;
+}
+
+/* Sidebar link active */
+#sidebar .nav-link.active {
+    background-color: #cce5ff;
+    font-weight: bold;
+    border-left: 4px solid #007bff;
+}
+
+/* Icon bên trái link */
+.icon {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+/* Phần nội dung chính */
+.col-md-10,
+.col-lg-10 {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Responsive - optional tweak */
+@media (max-width: 768px) {
+    #sidebar {
+        height: auto;
+        position: relative;
+    }
+
+    .row {
+        height: auto;
+    }
+}

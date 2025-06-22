@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <header class="header d-flex justify-content-between align-items-center">
+    <h1 class="header-title">Dashboard</h1>
+    <button class="btn btn-outline-light btn-sm d-flex align-items-center gap-2" (click)="confirmLogout()">
+      <i class="fas fa-sign-out-alt"></i> Logout
+    </button>
+  </header>
+
+  <div class="row">
+    <nav id="sidebar" class="col-md-2 col-lg-2 d-md-block sidebar">
+      <div class="position-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" (click)="showAdminComponent('orders')" routerLink="/admin/orders"
+              routerLinkActive="active">
+              <i class="fab fa-first-order icon"></i> Orders
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="showAdminComponent('categories')" routerLink="/admin/categories"
+              routerLinkActive="active">
+              <i class="fab fa-canadian-maple-leaf icon"></i> Categories
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="showAdminComponent('products')" routerLink="/admin/products"
+              routerLinkActive="active">
+              <i class="fab fa-codepen icon"></i> Products
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="col-md-10 col-lg-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+@import '../../../styles/shared-styles.scss';
+
+.page-number {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin: 0 2px;
+    border-radius: 3px;
+}
+
+.page-number.active {
+    background-color: $shopapp-color !important;
+    color: #fff;
+    border-color: $shopapp-color !important;
+}
+
+.btn.btn-primary {
+    margin-left: 10px;
+}
+
+.container-fluid {
+    background-color: white;
+    padding-left: 0 !important;
+    /* Remove left padding */
+    padding-right: 0 !important;
+    /* Remove right padding */
+    height: 100vh;
+}
+
+.button-primary {
+    white-space: nowrap;
+}
+
+// 1. Cho phép cuộn ngang khi cần
+.table-responsive {
+    overflow-x: auto;
+}
+
+// 2. Buộc browser tính width cột cố định, tránh tràn
+.table-fixed {
+    table-layout: fixed;
+    width: 100%;
+}
+
+// 3. Cho phép xuống dòng & wrap chữ, căn giữa, padding đều
+.table-fixed th,
+.table-fixed td {
+    white-space: normal; // cho phép wrap
+    word-wrap: break-word; // bẻ từ khi dài
+    text-align: center; // căn giữa
+    vertical-align: middle; // căn giữa theo chiều dọc
+    padding: 0.5rem !important; // chỉnh padding đều
+}
+
+// 4. Tỉ lệ width cho từng cột, tuỳ bạn hiệu chỉnh %
+.table-fixed th:nth-child(1),
+.table-fixed td:nth-child(1) {
+    width: 5%;
+}
+
+// Mã đơn
+.table-fixed th:nth-child(2),
+.table-fixed td:nth-child(2) {
+    width: 5%;
+}
+
+// Mã người dùng
+.table-fixed th:nth-child(3),
+.table-fixed td:nth-child(3) {
+    width: 10%;
+}
+
+// Họ và tên
+.table-fixed th:nth-child(4),
+.table-fixed td:nth-child(4) {
+    width: 15%;
+}
+
+// Email
+.table-fixed th:nth-child(5),
+.table-fixed td:nth-child(5) {
+    width: 10%;
+}
+
+// Số điện thoại
+.table-fixed th:nth-child(6),
+.table-fixed td:nth-child(6) {
+    width: 15%;
+}
+
+// Địa chỉ
+.table-fixed th:nth-child(7),
+.table-fixed td:nth-child(7) {
+    width: 10%;
+}
+
+// Ghi chú
+.table-fixed th:nth-child(8),
+.table-fixed td:nth-child(8) {
+    width: 10%;
+}
+
+// Ngày đặt
+.table-fixed th:nth-child(9),
+.table-fixed td:nth-child(9) {
+    width: 5%;
+}
+
+// Trạng thái
+.table-fixed th:nth-child(10),
+.table-fixed td:nth-child(10) {
+    width: 5%;
+}
